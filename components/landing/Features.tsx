@@ -17,7 +17,7 @@ const pillars = [
     },
     {
         title: "Construction Velocity",
-        description: "Leveraging modular innovation and streamlined supply chains to reduce build times by up to 40%.",
+        description: "Leveraging 3D printing innovation and streamlined supply chains to reduce build times by up to 40%.",
         icon: Zap,
         image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop"
     },

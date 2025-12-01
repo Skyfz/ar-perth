@@ -12,7 +12,7 @@ const faqs = [
     },
     {
         question: "What makes AR Perth's construction methods faster?",
-        answer: "We utilize modular construction and prefabrication, moving up to 80% of the build process off-site. This reduces weather delays and allows for parallel site preparation and manufacturing, cutting delivery times by 40%."
+        answer: "We utilize 3D printing construction and prefabrication, moving up to 80% of the build process off-site. This reduces weather delays and allows for parallel site preparation and manufacturing, cutting delivery times by 40%."
     },
     {
         question: "Are these developments sustainable?",
