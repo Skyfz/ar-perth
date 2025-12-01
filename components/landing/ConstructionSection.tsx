@@ -24,7 +24,7 @@ export function ConstructionSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center mb-32 relative">
                     <Reveal className="relative pl-8 md:pl-0 md:text-right md:pr-12">
                         <span className="text-5xl font-medium text-emerald-500/20 absolute -top-12 left-8 md:right-12 md:left-auto">01</span>
-                        <h3 className="text-2xl font-medium text-[#17191F] mb-3 tracking-tight">Modular & Prefabrication</h3>
+                        <h3 className="text-2xl font-medium text-[#17191F] mb-3 tracking-tight">3D Printing & Prefabrication</h3>
                         <p className="text-gray-500 leading-relaxed text-sm">
                             By moving construction elements off-site, we reduce weather delays and reliance on on-site labor availability. This allows us to deliver projects in 18 months, not 28.
                         </p>
@@ -35,7 +35,7 @@ export function ConstructionSection() {
                             <img
                                 src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop"
                                 className="w-full h-full object-cover rounded-xl opacity-90"
-                                alt="Modular Construction"
+                                alt="3D Printing Construction"
                             />
                         </GlassCard>
                     </Reveal>

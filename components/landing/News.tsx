@@ -14,7 +14,7 @@ const articles = [
     },
     {
         category: "Innovation",
-        title: "Modular Construction: The Key to Halving Build Times.",
+        title: "3D Printing Construction: The Key to Halving Build Times.",
         date: "Nov 15, 2025"
     },
     {
