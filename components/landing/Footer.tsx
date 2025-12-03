@@ -72,8 +72,16 @@ export function Footer() {
 
                     <div className="space-y-6">
                         <h4 className="text-lg font-medium text-gray-400">Get in Touch</h4>
+
+                        <div className="space-y-2">
+                            <span className="text-sm text-gray-400 block">Cell number</span>
+                            <a href="tel:+61447898962" className="text-2xl font-normal hover:text-gray-500 transition-colors tracking-tight block">
+                                +61 447 898 962
+                            </a>
+                        </div>
+
                         <button className="w-full bg-[#17191F] text-white py-4 rounded-xl hover:bg-gray-800 transition-colors font-medium text-left px-6 flex justify-between items-center group">
-                            Contact Us
+                            Contact Form
                             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                         </button>
                         <div className="relative">

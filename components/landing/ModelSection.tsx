@@ -14,11 +14,18 @@ export function ModelSection() {
                     </div>
                 </Reveal>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* BTR Column */}
-                    <Reveal delay={100} className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 hover:bg-white/10 transition-colors">
+                    <Reveal delay={100} className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-colors">
                         <h3 className="text-2xl font-medium mb-6">Build-to-Rent (BTR)</h3>
                         <ul className="space-y-4">
+                            <li className="flex items-start gap-3">
+                                <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0 mt-0.5" />
+                                <div>
+                                    <strong className="block text-white">Affordable Rentals</strong>
+                                    <span className="text-gray-400 text-sm">Targeting rentals under $750 per week.</span>
+                                </div>
+                            </li>
                             <li className="flex items-start gap-3">
                                 <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0 mt-0.5" />
                                 <div>
@@ -44,9 +51,16 @@ export function ModelSection() {
                     </Reveal>
 
                     {/* Impact Column */}
-                    <Reveal delay={200} className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 hover:bg-white/10 transition-colors">
+                    <Reveal delay={200} className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-colors">
                         <h3 className="text-2xl font-medium mb-6">Impact Housing</h3>
                         <ul className="space-y-4">
+                            <li className="flex items-start gap-3">
+                                <CheckCircle2 className="w-6 h-6 text-orange-400 shrink-0 mt-0.5" />
+                                <div>
+                                    <strong className="block text-white">Price Point Focus</strong>
+                                    <span className="text-gray-400 text-sm">Focus on homes under $850,000.</span>
+                                </div>
+                            </li>
                             <li className="flex items-start gap-3">
                                 <CheckCircle2 className="w-6 h-6 text-orange-400 shrink-0 mt-0.5" />
                                 <div>
@@ -66,6 +80,27 @@ export function ModelSection() {
                                 <div>
                                     <strong className="block text-white">Economic Necessity</strong>
                                     <span className="text-gray-400 text-sm">Affordable housing is mainstream economic infrastructure.</span>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <CheckCircle2 className="w-6 h-6 text-orange-400 shrink-0 mt-0.5" />
+                                <div>
+                                    <strong className="block text-white">Working Community Housing Schemes</strong>
+                                    <span className="text-gray-400 text-sm">Innovative housing models designed to support the local workforce.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </Reveal>
+
+                    {/* Alternative Power Column */}
+                    <Reveal delay={300} className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-colors">
+                        <h3 className="text-2xl font-medium mb-6">Alternative Power</h3>
+                        <ul className="space-y-4">
+                            <li className="flex items-start gap-3">
+                                <CheckCircle2 className="w-6 h-6 text-yellow-400 shrink-0 mt-0.5" />
+                                <div>
+                                    <strong className="block text-white">Solar & Off-Grid Systems</strong>
+                                    <span className="text-gray-400 text-sm">Integrated renewable energy solutions for energy independence.</span>
                                 </div>
                             </li>
                         </ul>
