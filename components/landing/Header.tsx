@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Menu, ArrowRight, X } from "lucide-react"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
 interface HeaderProps {
     onOpenContact?: () => void
@@ -40,9 +41,9 @@ export function Header({ onOpenContact }: HeaderProps) {
                     </button>
 
                     {/* Logo */}
-                    <div className="px-4 font-medium tracking-tight text-lg text-[#17191F]">
+                    <Link href="/" className="px-4 font-medium tracking-tight text-lg text-[#17191F] hover:opacity-80 transition-opacity">
                         AR Perth
-                    </div>
+                    </Link>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-1 bg-white/50 rounded-full px-2 py-1 border border-white/50">
