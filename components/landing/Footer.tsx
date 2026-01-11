@@ -65,7 +65,7 @@ export function Footer() {
                                 <span className="text-2xl font-normal tracking-tight block">
                                     Global HQ
                                 </span>
-                                <span className="text-gray-500">Alleyroads (South Africa)</span>
+                                <span className="text-gray-500">AR (South Africa)</span>
                             </li>
                         </ul>
                     </div>

@@ -23,7 +23,7 @@ export function AboutSection() {
                             Who We Are
                         </h2>
                         <p className="text-xl font-light text-gray-600 leading-relaxed mb-6">
-                            <strong className="text-black font-medium">AR Perth</strong> is the Australian expansion of <strong className="text-black font-medium">Alleyroads</strong>, a diversified property and infrastructure specialist.
+                            <strong className="text-black font-medium">AR Perth</strong> is the Australian expansion of <strong className="text-black font-medium">AR</strong>, a diversified property and infrastructure specialist.
                         </p>
                         <p className="text-lg text-gray-500 leading-relaxed">
                             We bring decades of project management expertise and a fresh perspective to the Western Australian market. We are not just developers; we are long-term asset holders and community builders.

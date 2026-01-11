@@ -24,9 +24,9 @@ export function ConstructionSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center mb-32 relative">
                     <Reveal className="relative pl-8 md:pl-0 md:text-right md:pr-12">
                         <span className="text-5xl font-medium text-emerald-500/20 absolute -top-12 left-8 md:right-12 md:left-auto">01</span>
-                        <h3 className="text-2xl font-medium text-[#17191F] mb-3 tracking-tight">3D Printing & Prefabrication</h3>
+                        <h3 className="text-2xl font-medium text-[#17191F] mb-3 tracking-tight">Hybrid Construction Capabilities</h3>
                         <p className="text-gray-500 leading-relaxed text-sm">
-                            By moving construction elements off-site, we reduce weather delays and reliance on on-site labor availability. This allows us to deliver projects in 18 months, not 28.
+                            We rely on proven traditional building methods as our standard. However, we uniquely offer <strong className="font-medium text-black">3D printing and prefabrication</strong> as available options for specific project requirements, giving us a technological edge when needed.
                         </p>
                     </Reveal>
                     <Reveal delay={200} className="relative group">
@@ -68,7 +68,7 @@ export function ConstructionSection() {
                         <span className="text-5xl font-medium text-orange-500/20 absolute -top-12 left-8 md:right-12 md:left-auto">03</span>
                         <h3 className="text-2xl font-medium text-[#17191F] mb-3 tracking-tight">Supply Chain Resilience</h3>
                         <p className="text-gray-500 leading-relaxed text-sm">
-                            Leveraging Alleyroads' global procurement network, we mitigate the material cost blowouts that have caused insolvency for over 2,300 construction companies.
+                            Leveraging AR' global procurement network, we mitigate the material cost blowouts that have caused insolvency for over 2,300 construction companies.
                         </p>
                     </Reveal>
                     <Reveal delay={200} className="relative group">

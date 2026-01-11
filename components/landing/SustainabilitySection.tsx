@@ -6,10 +6,10 @@ export function SustainabilitySection() {
         <section className="py-24 px-6 md:px-12 xl:px-24 max-w-[1400px] mx-auto">
             <Reveal className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-normal tracking-tight text-[#17191F] mb-4">
-                    Energy Efficient Living
+                    The Green Standard
                 </h2>
                 <p className="text-gray-500 max-w-2xl mx-auto">
-                    Affordability isn't just about rent; it's about utilities. Drawing on the expertise of our sister division, <strong className="text-black">AR Solar</strong>.
+                    Commitment to <strong className="text-black">6-star Green Star</strong> ratings and carbon-neutral construction practices.
                 </p>
             </Reveal>
 

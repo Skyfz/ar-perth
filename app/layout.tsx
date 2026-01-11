@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rialto Estate / Casa",
-  description: "Premium Real Estate",
+  title: "AR Perth",
+  description: "End-to-end Real Estate",
 };
 
 export default function RootLayout({

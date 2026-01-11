@@ -1,31 +1,25 @@
 import { Reveal } from "@/components/ui/Reveal"
 import { GlassCard } from "@/components/ui/GlassCard"
-import { Building2, Heart, Zap, Leaf } from "lucide-react"
+import { Building2, ShoppingBag, Leaf } from "lucide-react"
 
 const pillars = [
     {
-        title: "Build-to-Rent (BTR)",
-        description: "Creating communities, not just assets. Long-term tenure security for tenants.",
+        title: "Integrated Residential",
+        description: "From master-planned estates to high-density Build-to-Rent (BTR) apartments.",
         icon: Building2,
         image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=800&auto=format&fit=crop"
     },
     {
-        title: "Impact Housing",
-        description: "Providing key-worker accommodation for the nurses, teachers, and service workers who power Perth.",
-        icon: Heart,
+        title: "Neighborhood Retail",
+        description: "Developing high-traffic hubs that anchor local communities and provide essential services.",
+        icon: ShoppingBag,
         image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop"
     },
     {
-        title: "Construction Velocity",
-        description: "Leveraging 3D printing innovation and streamlined supply chains to reduce build times by up to 40%.",
-        icon: Zap,
-        image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop"
-    },
-    {
-        title: "Sustainable Living",
-        description: "Integrated renewable energy solutions (powered by AR Solar methodology) to lower the cost of living.",
+        title: "Sustainable Commercial",
+        description: "6-star Green Star rated precincts designed for the future workspace and student accommodation.",
         icon: Leaf,
-        image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop"
     }
 ]
 
@@ -35,8 +29,8 @@ export function Features() {
             <div className="mb-16">
                 <Reveal>
                     <h2 className="text-4xl md:text-[48px] leading-[1.1] font-normal tracking-[-0.04em] text-[#17191F]">
-                        Our Core Pillars <br />
-                        <span className="text-gray-400">for a Better Future</span>
+                        Our Sectors <br />
+                        <span className="text-gray-400">Integrated Communities</span>
                     </h2>
                 </Reveal>
             </div>

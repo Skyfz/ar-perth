@@ -2,7 +2,18 @@ import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/ui/Reveal"
 import { ArrowRight } from "lucide-react"
 
-export function Hero() {
+interface HeroProps {
+    onOpenContact?: () => void
+}
+
+export function Hero({ onOpenContact }: HeroProps) {
+    const scrollToDevelopments = () => {
+        const element = document.getElementById('developments')
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+
     return (
         <header className="relative w-full h-screen min-h-[700px] flex flex-col justify-center items-center overflow-hidden bg-[#F6F7FA]">
             {/* Background Image */}
@@ -12,31 +23,40 @@ export function Hero() {
                     className="opacity-90 w-full h-full object-cover scale-105"
                     alt="Perth Skyline"
                 />
-                <div className="bg-gradient-to-b from-black/40 via-black/20 to-[#F6F7FA] absolute top-0 right-0 bottom-0 left-0"></div>
+                <div className="bg-gradient-to-b from-black/70 via-black/50 to-black/80 absolute top-0 right-0 bottom-0 left-0"></div>
             </div>
 
             {/* Typography */}
             <div className="relative z-10 flex flex-col items-center text-center w-full max-w-5xl px-6">
                 <Reveal>
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal tracking-tight text-white mb-6 drop-shadow-lg">
-                        Building the Future <br />
-                        <span className="font-light italic">of Western Australia</span>
+                        Master-Planned Excellence. <br />
+                        {/* <span className="font-light italic">Perth Delivered.</span> */}
                     </h1>
                 </Reveal>
 
                 <Reveal delay={200}>
                     <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 font-light leading-relaxed drop-shadow-md">
-                        Secure. Sustainable. Scalable. We combine institutional-grade Build-to-Rent models with advanced construction technologies.
+                        A vertically integrated leader in Western Australia’s residential and retail sectors, providing end-to-end delivery certainty.
                     </p>
                 </Reveal>
 
                 <Reveal delay={400}>
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <Button size="lg" className="rounded-full text-lg px-8 py-6 bg-white text-black hover:bg-gray-100 border-none">
+                        <Button
+                            size="lg"
+                            className="rounded-full text-lg px-8 py-6 bg-white text-black hover:bg-gray-100 border-none"
+                            onClick={onOpenContact}
+                        >
                             Partner with Us
                             <ArrowRight className="ml-2 w-5 h-5" />
                         </Button>
-                        <Button size="lg" variant="outline" className="rounded-full text-lg px-8 py-6 bg-transparent text-white border-white hover:bg-white/10 hover:text-white">
+                        <Button
+                            size="lg"
+                            variant="outline"
+                            className="rounded-full text-lg px-8 py-6 bg-transparent text-white border-white hover:bg-white/10 hover:text-white"
+                            onClick={scrollToDevelopments}
+                        >
                             Explore Developments
                         </Button>
                     </div>

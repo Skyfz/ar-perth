@@ -7,44 +7,37 @@ export function ModelSection() {
             <div className="px-6 md:px-12 xl:px-24 max-w-[1400px] mx-auto">
                 <Reveal>
                     <div className="text-center mb-16 max-w-3xl mx-auto">
-                        <h2 className="text-4xl md:text-5xl font-normal tracking-tight mb-6">The Model</h2>
+                        <h2 className="text-4xl md:text-5xl font-normal tracking-tight mb-6">The Vertical Advantage</h2>
                         <p className="text-xl text-gray-400 font-light">
-                            Unlike the traditional "build-to-sell" model, AR Perth retains ownership. This institutional model allows us to control quality, create community, and stabilize supply.
+                            We are both the Developer and the Builder. This integrated model allows us to control quality, timelines, and costs—eliminating the risk of delivery delays.
                         </p>
                     </div>
                 </Reveal>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {/* BTR Column */}
+                    {/* Delivery Column */}
                     <Reveal delay={100} className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-colors">
-                        <h3 className="text-2xl font-medium mb-6">Build-to-Rent (BTR)</h3>
+                        <h3 className="text-2xl font-medium mb-6">End-to-End Delivery</h3>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3">
                                 <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0 mt-0.5" />
                                 <div>
-                                    <strong className="block text-white">Affordable Rentals</strong>
-                                    <span className="text-gray-400 text-sm">Targeting rentals under $750 per week.</span>
+                                    <strong className="block text-white">Concept to Keys</strong>
+                                    <span className="text-gray-400 text-sm">One team managing the entire project lifecycle.</span>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
                                 <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0 mt-0.5" />
                                 <div>
-                                    <strong className="block text-white">Control Quality</strong>
-                                    <span className="text-gray-400 text-sm">We build durable assets because we maintain them long-term.</span>
+                                    <strong className="block text-white">Risk Elimination</strong>
+                                    <span className="text-gray-400 text-sm">No third-party builder margins or disputes.</span>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
                                 <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0 mt-0.5" />
                                 <div>
-                                    <strong className="block text-white">Create Community</strong>
-                                    <span className="text-gray-400 text-sm">Co-working spaces, communal gardens, and shared fleets.</span>
-                                </div>
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0 mt-0.5" />
-                                <div>
-                                    <strong className="block text-white">Stabilize Supply</strong>
-                                    <span className="text-gray-400 text-sm">Delivering housing at scale (hundreds of units) vs drip-feeding.</span>
+                                    <strong className="block text-white">Speed to Market</strong>
+                                    <span className="text-gray-400 text-sm">Seamless transition from design to construction.</span>
                                 </div>
                             </li>
                         </ul>
