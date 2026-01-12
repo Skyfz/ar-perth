@@ -18,6 +18,7 @@ import { Testimonials } from "@/components/landing/Testimonials"
 import { DynamicServices } from "@/components/landing/DynamicServices"
 import { ImpactSection } from "@/components/landing/ImpactSection"
 import { ContactModal } from "@/components/ui/ContactModal"
+import { Toaster } from "sonner"
 
 export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false)
@@ -39,9 +40,10 @@ export default function Home() {
       <div id="sustainability"><SustainabilitySection /></div>
       <div id="faq"><FAQ /></div>
       <div id="news"><News /></div>
-      <div id="contact"><Footer /></div>
+      <div id="contact"><Footer onOpenContact={() => setIsContactOpen(true)} /></div>
 
       <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
+      <Toaster />
     </main>
   )
 }

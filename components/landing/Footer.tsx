@@ -1,10 +1,20 @@
 import { Reveal } from "@/components/ui/Reveal"
 import { ArrowRight, Facebook, Instagram, Linkedin } from "lucide-react"
+import Link from "next/link"
+import { toast } from "sonner"
 
-export function Footer() {
+interface FooterProps {
+    onOpenContact?: () => void
+}
+
+export function Footer({ onOpenContact }: FooterProps) {
     return (
         <footer className="bg-white pt-24 pb-8 px-6 md:px-12 xl:px-24 rounded-t-[40px] shadow-[0_-10px_60px_rgba(0,0,0,0.03)] relative mt-24">
             <div className="max-w-[1400px] mx-auto relative z-10">
+                <Link href="/" className="inline-flex items-center gap-3 hover:opacity-80 transition-opacity">
+                    <img src="/logo.png" alt="AR Perth" className="h-12 w-auto" />
+                    <span className="font-medium tracking-tight text-3xl text-[#17191F]">AR Perth</span>
+                </Link>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-32">
 
                     <div className="space-y-6">
@@ -80,13 +90,19 @@ export function Footer() {
                             </a>
                         </div>
 
-                        <button className="w-full bg-[#17191F] text-white py-4 rounded-xl hover:bg-gray-800 transition-colors font-medium text-left px-6 flex justify-between items-center group">
+                        <button
+                            onClick={onOpenContact}
+                            className="w-full bg-[#17191F] text-white py-4 rounded-xl hover:bg-gray-800 transition-colors font-medium text-left px-6 flex justify-between items-center group"
+                        >
                             Contact Form
                             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                         </button>
                         <div className="relative">
                             <input type="email" placeholder="Subscribe to Newsletter" className="w-full bg-[#F6F7FA] py-4 pl-6 pr-14 rounded-xl outline-none focus:ring-1 focus:ring-black transition-all" />
-                            <button className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center text-black/50 hover:text-black">
+                            <button
+                                onClick={() => toast.success("Coming soon, thanks!")}
+                                className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center text-black/50 hover:text-black"
+                            >
                                 <ArrowRight className="w-5 h-5" />
                             </button>
                         </div>
