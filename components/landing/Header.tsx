@@ -41,8 +41,9 @@ export function Header({ onOpenContact }: HeaderProps) {
                     </button>
 
                     {/* Logo */}
-                    <Link href="/" className="px-4 font-medium tracking-tight text-lg text-[#17191F] hover:opacity-80 transition-opacity">
-                        AR Perth
+                    <Link href="/" className="px-4 flex items-center gap-2 hover:opacity-80 transition-opacity">
+                        <img src="/logo.png" alt="AR Perth" className="h-12 w-auto" />
+                        <span className="font-medium tracking-tight text-lg text-[#17191F]">AR Perth</span>
                     </Link>
 
                     {/* Desktop Navigation */}

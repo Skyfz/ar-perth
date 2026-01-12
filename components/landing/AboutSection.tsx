@@ -9,7 +9,7 @@ export function AboutSection() {
                 <Reveal className="order-2 lg:order-1">
                     <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                         <img
-                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop"
+                            src="/cottonbro.jpg"
                             className="w-full h-full object-cover"
                             alt="Perth Architecture"
                         />
