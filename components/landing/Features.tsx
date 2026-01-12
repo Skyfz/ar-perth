@@ -13,13 +13,13 @@ const pillars = [
         title: "Neighborhood Retail",
         description: "Developing high-traffic hubs that anchor local communities and provide essential services.",
         icon: ShoppingBag,
-        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop"
+        image: "/neighborhood-retail.webp"
     },
     {
         title: "Sustainable Commercial",
         description: "6-star Green Star rated precincts designed for the future workspace and student accommodation.",
         icon: Leaf,
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop"
+        image: "/commercial.jpg"
     }
 ]
 

@@ -31,10 +31,10 @@ export function ConstructionSection() {
                     </Reveal>
                     <Reveal delay={200} className="relative group">
                         <div className="absolute -inset-1 bg-gradient-to-r from-emerald-100 to-teal-50 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
-                        <GlassCard className="relative h-64 flex items-center justify-center bg-white">
+                        <GlassCard className="relative h-64 flex items-center justify-center bg-white p-0 overflow-hidden">
                             <img
-                                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop"
-                                className="w-full h-full object-cover rounded-xl opacity-90"
+                                src="/hyb-constr.jpg"
+                                className="w-full h-full object-cover opacity-90"
                                 alt="3D Printing Construction"
                             />
                         </GlassCard>
@@ -45,10 +45,10 @@ export function ConstructionSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center mb-32 relative">
                     <Reveal className="relative group order-2 md:order-1">
                         <div className="absolute -inset-1 bg-gradient-to-r from-blue-100 to-indigo-50 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
-                        <GlassCard className="relative h-64 flex items-center justify-center bg-white">
+                        <GlassCard className="relative h-64 flex items-center justify-center bg-white p-0 overflow-hidden">
                             <img
                                 src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=800&auto=format&fit=crop"
-                                className="w-full h-full object-cover rounded-xl opacity-90"
+                                className="w-full h-full object-cover opacity-90"
                                 alt="Tech Planning"
                             />
                         </GlassCard>
@@ -73,10 +73,10 @@ export function ConstructionSection() {
                     </Reveal>
                     <Reveal delay={200} className="relative group">
                         <div className="absolute -inset-1 bg-gradient-to-r from-orange-100 to-amber-50 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
-                        <GlassCard className="relative h-64 flex items-center justify-center bg-white">
+                        <GlassCard className="relative h-64 flex items-center justify-center bg-white p-0 overflow-hidden">
                             <img
-                                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop"
-                                className="w-full h-full object-cover rounded-xl opacity-90"
+                                src="/supply-chain.webp"
+                                className="w-full h-full object-cover opacity-90"
                                 alt="Supply Chain"
                             />
                         </GlassCard>

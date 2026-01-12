@@ -5,17 +5,17 @@ const developments = [
     {
         title: "The inner-city precinct",
         location: "Perth CBD",
-        image: "https://images.unsplash.com/photo-1545324418-cc1a3d2b0b1d?q=80&w=1000&auto=format&fit=crop"
+        image: "/inner-city.jpg"
     },
     {
         title: "Coastal Residences",
         location: "Cottesloe",
-        image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000&auto=format&fit=crop"
+        image: "/coastal.jpg"
     },
     {
         title: "Urban Village",
         location: "Subiaco",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"
+        image: "/urban-village.webp"
     }
 ]
 
