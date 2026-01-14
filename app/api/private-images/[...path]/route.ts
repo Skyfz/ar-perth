@@ -7,7 +7,9 @@ export async function GET(
     request: NextRequest,
     { params }: { params: { path: string[] } }
 ) {
-    const host = request.headers.get('host') || ''
+    // Check both 'host' and 'x-forwarded-host' headers
+    const host = request.headers.get('host') || request.headers.get('x-forwarded-host') || ''
+
     const isLocalhost =
         host.startsWith('localhost') ||
         host.startsWith('127.0.0.1') ||
