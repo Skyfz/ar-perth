@@ -50,7 +50,7 @@ export default async function HouseDetailsPage({ params }: PageProps) {
                             <ArrowLeft className="w-4 h-4 mr-2" /> Back to Collection
                         </Link>
                         <div className="flex-1" />
-                        <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
+                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
                             Enquire Now
                         </button>
                     </div>
@@ -72,20 +72,7 @@ export default async function HouseDetailsPage({ params }: PageProps) {
 
                             </div>
 
-                            <div className="relative aspect-square rounded-3xl overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900">
-                                {/* Floorplan */}
-                                <Image
-                                    src={house.floorPlanUrl}
-                                    alt={`${house.name} Floor Plan`}
-                                    fill
-                                    className="object-contain p-4"
-                                />
-                                <div className="absolute top-4 right-4 group cursor-pointer">
-                                    <div className="bg-white dark:bg-black p-2 rounded-full shadow-md hover:scale-110 transition-transform">
-                                        <Download className="w-5 h-5 text-zinc-600 dark:text-zinc-300" />
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
 
                         {/* Right Column: details */}
@@ -120,36 +107,65 @@ export default async function HouseDetailsPage({ params }: PageProps) {
                                 </div>
                             </div>
 
-                            <div className="space-y-6">
-                                <h3 className="text-2xl font-bold font-heading">Premium Inclusions</h3>
-                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    {specsList.map((spec, i) => (
-                                        <li key={i} className="flex items-start">
-                                            <div className="mt-1 p-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 mr-3 shrink-0">
-                                                <Check className="w-3 h-3" />
-                                            </div>
-                                            <span className="text-zinc-600 dark:text-zinc-300">{spec}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
 
-                            <div className="p-8 rounded-3xl bg-indigo-50 dark:bg-indigo-900/10 border border-indigo-100 dark:border-indigo-500/20 space-y-6">
-                                <h3 className="text-xl font-bold text-indigo-900 dark:text-indigo-300">Interested in the {house.name}?</h3>
-                                <p className="text-indigo-700 dark:text-indigo-400/80">
+
+                            <div className="p-8 rounded-3xl bg-blue-50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-500/20 space-y-6">
+                                <div className="flex flex-col items-end pb-6 border-b border-blue-100 dark:border-blue-500/20">
+                                    <span className="text-sm uppercase tracking-widest text-blue-600 dark:text-blue-400 font-bold mb-2">Starting From</span>
+                                    <span className="text-5xl font-bold text-zinc-900 dark:text-white font-heading">
+                                        ${house.startingPrice.toLocaleString()}
+                                    </span>
+                                </div>
+                                <h3 className="text-xl font-bold text-blue-900 dark:text-blue-300">Interested in the {house.name}?</h3>
+                                <p className="text-blue-700 dark:text-blue-400/80">
                                     Get in touch with our team to discuss customization options and site requirements.
                                 </p>
-                                <button className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-lg shadow-lg shadow-indigo-200 dark:shadow-none transition-all hover:-translate-y-0.5 active:translate-y-0">
+                                <button className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold text-lg shadow-lg shadow-blue-200 dark:shadow-none transition-all hover:-translate-y-0.5 active:translate-y-0">
                                     Build This Plan Now
                                 </button>
                                 <div className="flex justify-center">
-                                    <button className="flex items-center text-sm text-indigo-600 dark:text-indigo-400 font-medium hover:underline">
+                                    <button className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium hover:underline">
                                         <Phone className="w-4 h-4 mr-2" /> Talk to a Design Consultant
                                     </button>
                                 </div>
                             </div>
-                        </div>
 
+                            {/* Mobile/Tablet Floor Plan Location */}
+                            <div className="lg:hidden relative aspect-square rounded-3xl overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 mt-8">
+                                <Image
+                                    src={house.floorPlanUrl}
+                                    alt={`${house.name} Floor Plan`}
+                                    fill
+                                    className="object-contain p-4"
+                                />
+                                <div className="absolute top-4 right-4 group cursor-pointer">
+                                    <div className="bg-white dark:bg-black p-2 rounded-full shadow-md hover:scale-110 transition-transform">
+                                        <Download className="w-5 h-5 text-zinc-600 dark:text-zinc-300" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Desktop Floor Plan Section */}
+                    <div className="hidden lg:block mt-24">
+                        <div className="max-w-5xl mx-auto">
+                            <h3 className="text-3xl font-bold font-heading mb-8 text-center">Floor Plan</h3>
+                            <div className="relative aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
+                                <Image
+                                    src={house.floorPlanUrl}
+                                    alt={`${house.name} Floor Plan`}
+                                    fill
+                                    className="object-contain p-8"
+                                />
+                                <div className="absolute top-8 right-8 group cursor-pointer">
+                                    <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow-lg transition-all hover:-translate-y-1">
+                                        <Download className="w-5 h-5" />
+                                        <span className="font-semibold">Download Plan</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -8,14 +8,21 @@ import { DefaultLayout } from "@/components/DefaultLayout";
 
 export default function VenturePlansPage() {
     const [filters, setFilters] = useState({
-        minBeds: 0,
+        beds: 0,
+        baths: 0,
         minArea: 0,
-        maxArea: 300,
+        maxArea: 225,
     });
 
     const filteredHouses = useMemo(() => {
         return ventureHouses.filter((house) => {
-            if (house.specs.beds < filters.minBeds) return false;
+            if (filters.beds === 4) {
+                if (house.specs.beds < 4) return false;
+            } else if (filters.beds > 0) {
+                if (house.specs.beds !== filters.beds) return false;
+            }
+
+            if (filters.baths > 0 && house.specs.baths !== filters.baths) return false;
             if (house.floorArea && (house.floorArea < filters.minArea || house.floorArea > filters.maxArea)) return false;
             return true;
         });
@@ -26,7 +33,7 @@ export default function VenturePlansPage() {
     };
 
     const resetFilters = () => {
-        setFilters({ minBeds: 0, minArea: 0, maxArea: 300 });
+        setFilters({ beds: 0, baths: 0, minArea: 0, maxArea: 225 });
     };
 
     return (
@@ -48,8 +55,12 @@ export default function VenturePlansPage() {
                         filters={{ ...filters, maxBeds: 5 }}
                         onFilterChange={handleFilterChange}
                         resetFilters={resetFilters}
-                        areaRange={[100, 300]}
+                        areaRange={[113, 225]}
                     />
+
+                    <p className="text-zinc-500 font-medium">
+                        Showing {filteredHouses.length} match{filteredHouses.length !== 1 ? "es" : ""}
+                    </p>
 
                     {/* Gallery Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
