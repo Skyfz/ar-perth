@@ -59,11 +59,11 @@ export function HouseCard({ house }: HouseCardProps) {
                         <Car className="w-4 h-4" />
                         <span className="font-semibold text-sm">{house.specs.garages}</span>
                     </div>
-                    <div className="w-px h-8 bg-zinc-100 dark:bg-zinc-800" />
+                    {/* <div className="w-px h-8 bg-zinc-100 dark:bg-zinc-800" />
                     <div className="flex flex-col items-center space-y-1 text-zinc-600 dark:text-zinc-400">
                         <Square className="w-4 h-4" />
                         <span className="font-semibold text-sm">{house.floorArea}m²</span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </Link>
