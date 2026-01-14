@@ -7,19 +7,26 @@ export async function GET(
     request: NextRequest,
     { params }: { params: { path: string[] } }
 ) {
-    // 1. Security Check: Host must be localhost
     const host = request.headers.get('host') || ''
     const isLocalhost =
         host.startsWith('localhost') ||
         host.startsWith('127.0.0.1') ||
         host.startsWith('[::1]')
 
+    console.log('[Private Image Debug] Request:', {
+        url: request.url,
+        host,
+        isLocalhost,
+        headers: Object.fromEntries(request.headers.entries())
+    })
+
+    // 1. Security Check: Host must be localhost
     if (!isLocalhost) {
+        console.log('[Private Image Debug] Blocked by host check')
         return new NextResponse('Forbidden', { status: 403 })
     }
 
     // 2. Resolve File Path
-    // 'params.path' is an array of path segments (e.g. ['venture-plans', 'house1.jpg'])
     const filePathParams = (await params).path
     const relativePath = filePathParams.join('/')
 
@@ -27,13 +34,22 @@ export async function GET(
     const privateDir = path.join(process.cwd(), 'private')
     const filePath = path.join(privateDir, relativePath)
 
+    console.log('[Private Image Debug] Path Resolution:', {
+        relativePath,
+        privateDir,
+        filePath,
+        exists: fs.existsSync(filePath)
+    })
+
     // 3. Security Check: Prevent Directory Traversal
     if (!filePath.startsWith(privateDir)) {
+        console.log('[Private Image Debug] Blocked by path traversal check')
         return new NextResponse('Forbidden', { status: 403 })
     }
 
     // 4. Check if file exists
     if (!fs.existsSync(filePath)) {
+        console.log('[Private Image Debug] File not found')
         return new NextResponse('File not found', { status: 404 })
     }
 
@@ -49,7 +65,7 @@ export async function GET(
             },
         })
     } catch (error) {
-        console.error('Error serving private file:', error)
+        console.error('[Private Image Debug] Error serving private file:', error)
         return new NextResponse('Internal Server Error', { status: 500 })
     }
 }
