@@ -51,6 +51,7 @@ export function Header({ onOpenContact }: HeaderProps) {
                         <a href="#about" className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-[#17191F] hover:bg-white rounded-full transition-all">About</a>
                         <a href="#construction" className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-[#17191F] hover:bg-white rounded-full transition-all">Projects</a>
                         <a href="#investment" className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-[#17191F] hover:bg-white rounded-full transition-all">Investment</a>
+                        <Link href="/venture-plans" className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-[#17191F] hover:bg-white rounded-full transition-all">Designs</Link>
                         <a href="#news" className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-[#17191F] hover:bg-white rounded-full transition-all">News</a>
                     </div>
 
@@ -97,6 +98,9 @@ export function Header({ onOpenContact }: HeaderProps) {
                         <a href="#construction" onClick={toggleMenu} className="text-4xl md:text-6xl font-medium tracking-tighter text-[#17191F] hover:text-gray-400 transition-colors">
                             Our Projects
                         </a>
+                        <Link href="/venture-plans" onClick={toggleMenu} className="text-4xl md:text-6xl font-medium tracking-tighter text-[#17191F] hover:text-gray-400 transition-colors">
+                            Designs Collection
+                        </Link>
                         <a href="#investment" onClick={toggleMenu} className="text-4xl md:text-6xl font-medium tracking-tighter text-[#17191F] hover:text-gray-400 transition-colors">
                             Investment
                         </a>
