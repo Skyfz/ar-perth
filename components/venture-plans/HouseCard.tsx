@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { VentureHouse } from "@/lib/venture-plans";
-import { Bed, Bath, Square, Car, ArrowRight } from "lucide-react";
+import { Bed, Bath, Square, Car, ArrowRight, Armchair } from "lucide-react";
 
 interface HouseCardProps {
     house: VentureHouse;
@@ -39,20 +39,30 @@ export function HouseCard({ house }: HouseCardProps) {
                     </div>
                 </div>
 
-                <div className="flex items-center justify-between py-4 border-t border-zinc-100 dark:border-zinc-800">
-                    <div className="flex items-center space-x-2 text-zinc-600 dark:text-zinc-400">
-                        <Bed className="w-5 h-5" />
-                        <span className="font-semibold">{house.specs.beds}</span>
+                <div className="flex items-center justify-between py-4 border-t border-zinc-100 dark:border-zinc-800 px-1">
+                    <div className="flex flex-col items-center space-y-1 text-zinc-600 dark:text-zinc-400">
+                        <Bed className="w-4 h-4" />
+                        <span className="font-semibold text-sm">{house.specs.beds}</span>
                     </div>
                     <div className="w-px h-8 bg-zinc-100 dark:bg-zinc-800" />
-                    <div className="flex items-center space-x-2 text-zinc-600 dark:text-zinc-400">
-                        <Bath className="w-5 h-5" />
-                        <span className="font-semibold">{house.specs.baths}</span>
+                    <div className="flex flex-col items-center space-y-1 text-zinc-600 dark:text-zinc-400">
+                        <Bath className="w-4 h-4" />
+                        <span className="font-semibold text-sm">{house.specs.baths}</span>
                     </div>
                     <div className="w-px h-8 bg-zinc-100 dark:bg-zinc-800" />
-                    <div className="flex items-center space-x-2 text-zinc-600 dark:text-zinc-400">
-                        <Car className="w-5 h-5" />
-                        <span className="font-semibold">{house.specs.garages}</span>
+                    <div className="flex flex-col items-center space-y-1 text-zinc-600 dark:text-zinc-400">
+                        <Armchair className="w-4 h-4" />
+                        <span className="font-semibold text-sm">{house.specs.living}</span>
+                    </div>
+                    <div className="w-px h-8 bg-zinc-100 dark:bg-zinc-800" />
+                    <div className="flex flex-col items-center space-y-1 text-zinc-600 dark:text-zinc-400">
+                        <Car className="w-4 h-4" />
+                        <span className="font-semibold text-sm">{house.specs.garages}</span>
+                    </div>
+                    <div className="w-px h-8 bg-zinc-100 dark:bg-zinc-800" />
+                    <div className="flex flex-col items-center space-y-1 text-zinc-600 dark:text-zinc-400">
+                        <Square className="w-4 h-4" />
+                        <span className="font-semibold text-sm">{house.floorArea}m²</span>
                     </div>
                 </div>
             </div>
