@@ -5,7 +5,7 @@ import mime from 'mime'
 
 export async function GET(
     request: NextRequest,
-    { params }: { params: { path: string[] } }
+    { params }: { params: Promise<{ path: string[] }> }
 ) {
     // Check both 'host' and 'x-forwarded-host' headers
     const host = request.headers.get('host') || request.headers.get('x-forwarded-host') || ''
