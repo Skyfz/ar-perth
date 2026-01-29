@@ -38,7 +38,7 @@ export function UrgencySection() {
 
                 <Reveal delay={400} className="relative h-[400px] w-full bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex items-center justify-center p-12">
                     <img
-                        src="/mbawa-logo.png"
+                        src="/MBAWA/MBAWA%20Members%20Logo%20PNG.png"
                         alt="Master Builders Western Australia Member"
                         className="max-w-full max-h-full object-contain"
                     />
