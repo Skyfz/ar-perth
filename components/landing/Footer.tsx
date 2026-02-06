@@ -1,3 +1,5 @@
+"use client"
+
 import { Reveal } from "@/components/ui/Reveal"
 import { ArrowRight, Facebook, Instagram, Linkedin } from "lucide-react"
 import Link from "next/link"

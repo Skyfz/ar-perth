@@ -5,6 +5,7 @@ import { Header } from "@/components/landing/Header"
 import { Hero } from "@/components/landing/Hero"
 import { UrgencySection } from "@/components/landing/UrgencySection"
 import { Features } from "@/components/landing/Features"
+import { MembershipSection } from "@/components/landing/MembershipSection"
 import { DevelopmentsSection } from "@/components/landing/DevelopmentsSection"
 import { AboutSection } from "@/components/landing/AboutSection"
 import { ModelSection } from "@/components/landing/ModelSection"
@@ -29,6 +30,7 @@ export default function Home() {
       <div id="hero"><Hero onOpenContact={() => setIsContactOpen(true)} /></div>
       <div id="urgency"><UrgencySection /></div>
       <div id="features"><Features /></div>
+      <div id="membership"><MembershipSection /></div>
       <div id="developments"><DevelopmentsSection /></div>
       <div id="impact"><ImpactSection /></div>
       <div id="about"><AboutSection /></div>

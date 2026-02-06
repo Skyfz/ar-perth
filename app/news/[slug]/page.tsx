@@ -1,7 +1,7 @@
 import { Header } from "@/components/landing/Header"
 import { Footer } from "@/components/landing/Footer"
 import { getPostBySlug } from "@/lib/news"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, Linkedin, Twitter } from "lucide-react"
 import Link from "next/link"
 
 export default async function NewsPage(props: { params: Promise<{ slug: string }> }) {
@@ -9,8 +9,8 @@ export default async function NewsPage(props: { params: Promise<{ slug: string }
     const post = getPostBySlug(params.slug)
 
     // Simple Markdown Renderer
-    // Simple Markdown Renderer
     const renderContent = (content: string) => {
+        // ... (rest of the renderer logic) ...
         // Normalize line endings
         let normalized = content.replace(/\r\n/g, '\n')
 
@@ -67,7 +67,6 @@ export default async function NewsPage(props: { params: Promise<{ slug: string }
             </div>
 
             {/* Hero Image */}
-            {/* Hero Image */}
             <div className="relative h-[60vh] min-h-[500px] w-full overflow-hidden bg-gray-900">
                 {post.image && (
                     <img
@@ -112,11 +111,11 @@ export default async function NewsPage(props: { params: Promise<{ slug: string }
                         {/* Social placeholders */}
                         <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-gray-200 cursor-pointer transition-colors">
                             <span className="sr-only">LinkedIn</span>
-                            Lik
+                            <Linkedin className="w-5 h-5" />
                         </div>
                         <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-gray-200 cursor-pointer transition-colors">
                             <span className="sr-only">Twitter</span>
-                            X
+                            <Twitter className="w-5 h-5" />
                         </div>
                     </div>
                 </div>
