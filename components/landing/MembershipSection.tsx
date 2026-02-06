@@ -49,13 +49,13 @@ export function MembershipSection() {
 
                 <Reveal delay={400} className="relative h-[400px] w-full bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex items-center justify-center p-12">
                     <a
-                        href="https://portal.engineersaustralia.org.au/user/login?destination=myprofile/view-membership"
+                        href="https://engineersaustralia.org.au"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full h-full flex items-center justify-center"
                     >
                         <img
-                            src="/primary.jpg"
+                            src="/Primary.jpg"
                             alt="Engineers Australia Member Logo"
                             className="max-w-full max-h-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
                         />
