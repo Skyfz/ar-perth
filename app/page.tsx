@@ -23,7 +23,7 @@ import { Toaster } from "sonner"
 
 export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false)
-  const isDisabled = true
+  const isDisabled = false
 
   if (isDisabled) {
     return (
